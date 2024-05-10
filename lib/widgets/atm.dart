@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testweb/constants/colors.dart';
 
 class FadeTextExample extends StatefulWidget { 
   @override 
@@ -23,7 +24,11 @@ class _FadeTextExampleState extends State<FadeTextExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container( // Wrap Column with a Container
-     color: const Color.fromARGB(255, 44, 44, 44), // Background color
+    decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.transparent, CustomColor.bglight],
+              ),
+            ),
       // Set background color here
         child: Center(
           child: Column(

@@ -97,14 +97,16 @@ class _HomePageState extends State<HomePage> {
           // project
           Container(height: 200, width: double.maxFinite,
           decoration: BoxDecoration(
-    color: const Color.fromARGB(255, 44, 44, 44), // Background color
-  ),
+              gradient: LinearGradient(
+                colors: [Colors.transparent, CustomColor.bglight],
+              ),
+            ),
   child: Center(
     child: Padding(
       padding: const EdgeInsets.all(1.0),
       child: Text('Automates',
         style: TextStyle(
-        color: const Color.fromARGB(255, 255, 255, 255).withOpacity(0.8),
+        color: const Color.fromARGB(255, 255, 255, 255),
         fontSize: 150, fontFamily: 'Ariel',
           // Add other text styles such as fontSize, fontWeight, etc. as needed
         ),
@@ -113,7 +115,12 @@ class _HomePageState extends State<HomePage> {
   ),
           ),
           // contact
-          Container(height: 300, width: double.maxFinite, color: const Color.fromARGB(255, 44, 44, 44), child:FadeTextExample()),
+          Container(height: 300, width: double.maxFinite, decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.transparent, CustomColor.bglight],
+              ),
+              borderRadius: BorderRadius.circular(100),
+            ), child:FadeTextExample()),
           // footer
             Container(
   height: 50,
@@ -135,7 +142,105 @@ class _HomePageState extends State<HomePage> {
     ),
   ),
 ),
-
+Container(
+            height: 500,
+            width: double.maxFinite,
+            margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [const Color.fromARGB(255, 58, 14, 134), CustomColor.bglight],
+              ),
+            ),
+            child: Row(
+              children: [
+                Image.network('https://assets-global.website-files.com/656808d96fc4f14d1e86267b/6569929e05876884a2835883_%E2%80%94Pngtree%E2%80%94hazy%20and%20beautiful%20halo%20moon_5336588-p-2000.png'),
+                Padding(
+                  padding: EdgeInsets.all(2.0),
+                  child: Text("YOU HAVE THE IDEA\nWE BUILD IT",
+                  style: TextStyle(
+          color: const Color.fromARGB(255, 253, 251, 193), 
+           fontSize: 100, fontFamily: 'ROBOTO',
+          // Text color
+        ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        Container(
+  height: 200,
+  width: double.maxFinite,
+ decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [const Color.fromARGB(255, 58, 14, 134), CustomColor.bglight],
+              ),
+            ),
+  child: Center(
+    child: Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(
+        "We serve as your solution architect partner and project management team, aiding you in reaching your objectives. Additionally, we offer support\nin prototyping and outsourcing of hardware/software with AI integration. Our unique products, developed with computer vision hardware\nand software, showcase our experience in leveraging technology and business expertise to facilitate the growth of your business.",
+        style: TextStyle(
+          color: const Color.fromARGB(255, 255, 255, 255), 
+          fontSize: 20,
+          fontFamily: 'ROBOTO',
+          // Text color
+        ),
+      ),
+    ),
+  ),
+),
+Container(
+  height: 500,
+            width: double.maxFinite,
+            margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [const Color.fromARGB(255, 58, 57, 59), CustomColor.bglight],
+              ),
+            ),
+            child:Column(children:[
+              Text("OUR EXPERTISE",style:TextStyle(
+                color: const Color.fromARGB(255, 255, 255, 255), 
+          fontSize: 80,
+          fontFamily: 'ROBOTO',
+           fontWeight: FontWeight.bold,
+              )
+              ),
+              Row( children: [
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Column(children:[Text("LARGE LANGUAGE MODELS",style:TextStyle(
+                color: const Color.fromARGB(255, 255, 255, 255), 
+          fontSize: 45,
+          fontFamily: 'ROBOTO',
+              )
+                  ),
+                  Text("Increase your team's efficiency and understanding of your customers\n using deep learning algorithms. We can\nintegrate Large Language Models\n with your business processes:-\nSummarize, translate and predict market\ntrends- Inform your business decisions with the most up-to-date data-\nOptimize marketing strategies with customizable lead generation funnels-\nPersonalized customer service and improved client engagement",style:TextStyle(
+                color: const Color.fromARGB(255, 255, 255, 255), 
+          fontSize: 15,
+          fontFamily: 'ROBOTO',
+              )
+                  ),
+                  Image.network(
+                    'https://assets-global.website-files.com/656808d96fc4f14d1e86267b/656978b6f8059ed5c413f0a9_8572599.png'),
+                  ],
+                  ),
+                ),
+               Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Text("Work",style:TextStyle(
+                color: const Color.fromARGB(255, 255, 255, 255), 
+          fontSize: 80,
+          fontFamily: 'ROBOTO',
+              )
+                  ),
+                ),
+              ],
+                ),
+            ],
+            ),
+),
         ],
       ),
     );
