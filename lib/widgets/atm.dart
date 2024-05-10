@@ -26,7 +26,7 @@ class _FadeTextExampleState extends State<FadeTextExample> {
       body: Container( // Wrap Column with a Container
     decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.transparent, CustomColor.bglight],
+               colors: [   const Color.fromARGB(255, 36, 34, 34), CustomColor.bglight],
               ),
             ),
       // Set background color here
